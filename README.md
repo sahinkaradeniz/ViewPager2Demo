@@ -1,4 +1,4 @@
-# Android Kotlin ViewPager2 Kullanımı
+# Android Kotlin ViewPager2 Demo 
 
 Bu proje, Android uygulama geliştirme sürecinde ViewPager2 ve TabLayout kullanarak sayfa geçişleri ve etkileşimli içerik sunma konusunu ele almaktadır. Bu README dosyası, projenin nasıl kullanılacağına dair temel bilgileri içermektedir.
 
