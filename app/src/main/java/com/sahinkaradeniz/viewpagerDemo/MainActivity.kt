@@ -1,4 +1,4 @@
-package com.sahinkaradeniz.viewpagerdeneme
+package com.sahinkaradeniz.viewpagerDemo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

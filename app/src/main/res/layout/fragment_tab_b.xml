@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sahinkaradeniz.viewpagerdeneme.TabBFragment">
+    tools:context="com.sahinkaradeniz.viewpagerDemo.TabBFragment">
 
     <TextView
         android:layout_width="match_parent"

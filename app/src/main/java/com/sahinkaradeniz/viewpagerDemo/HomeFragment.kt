@@ -1,4 +1,4 @@
-package com.sahinkaradeniz.viewpagerdeneme
+package com.sahinkaradeniz.viewpagerDemo
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,13 +9,15 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.muhammetkdr.viewpagerdeneme.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
-    private lateinit var binding: FragmentHomeBinding
-    private lateinit var adapter: VisitDetailFragmentAdapter
+    private var _binding:FragmentHomeBinding?=null
+    private val binding get() = _binding!!
+
+    private lateinit var adapter: HomeFragmentStateAdapter
         override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
         ): View{
-            binding= FragmentHomeBinding.inflate(layoutInflater)
+            _binding= FragmentHomeBinding.inflate(layoutInflater)
             return binding.root
         }
 
@@ -34,10 +36,15 @@ class HomeFragment : Fragment() {
 
     private fun initViewPagerAdapter(){
         val viewPager = binding.vpHome
-        adapter = VisitDetailFragmentAdapter(childFragmentManager, viewLifecycleOwner.lifecycle,fragmentList)
+        adapter = HomeFragmentStateAdapter(childFragmentManager, viewLifecycleOwner.lifecycle,fragmentList)
         viewPager.adapter = adapter
-        TabLayoutMediator(binding.tabLayoutVisitDetail, viewPager) { tab, position ->
+        TabLayoutMediator(binding.tabLayoutHomeFragment, viewPager) { tab, position ->
             tab.text = tabTitles[position]
         }.attach()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding=null
     }
 }
