@@ -29,7 +29,7 @@ class HomeFragment : Fragment() {
         initViewPagerAdapter()
 
 
-        //Add line
+        //Add line between tabs
         val linearLayout = binding.tabLayoutHomeFragment.getChildAt(0) as LinearLayout
         linearLayout.showDividers = LinearLayout.SHOW_DIVIDER_MIDDLE
         val drawable = GradientDrawable()
