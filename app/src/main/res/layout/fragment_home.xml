@@ -9,24 +9,6 @@
         android:id="@+id/tabLayout_home_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:text="Tab Item"
-            android:layout_height="wrap_content">
-
-        </com.google.android.material.tabs.TabItem>
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:text="Tab Item 2"
-            android:layout_height="wrap_content">
-
-        </com.google.android.material.tabs.TabItem>
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:text="Tab Item 3"
-            android:layout_height="wrap_content">
-
-        </com.google.android.material.tabs.TabItem>
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager2.widget.ViewPager2
